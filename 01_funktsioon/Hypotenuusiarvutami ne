@@ -1,0 +1,17 @@
+public class Hypotenuusiarvutamine{
+
+    public static double[] reaalarvudeks(String[] sd){
+		double[] g=new double[sd.length];
+		for(int i=0; i<sd.length; i++){
+			g[i]=Double.parseDouble(sd[i]);
+			}
+		return g;
+		}
+	public static void main(String[] arg){
+		double[] arvud=reaalarvudeks(arg);
+        double hypo=0;
+
+        hypo=Math.sqrt(Math.pow(arvud[0]+arvud[1],2));
+        System.out.println(hypo);
+}
+}
